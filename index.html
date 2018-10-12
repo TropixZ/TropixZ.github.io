@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        //css页面滚动触发动画
+        $(document).ready(function(){
+            var a,b,c;
+            a=$(window).height();
+            $(window).scroll(function(){
+                var b=$(this).scrollTop();
+                $(".skill").each(function(){
+                    c=$(this).offset().top;
+                    if(a+b>c){
+                        $(this).addClass("move");
+                    }
+                    else{
+                        $(this).removeClass("move");
+                    }
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+<!--导航-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container"><!--固定的宽度值-->
+            <!--小屏幕导航按钮和logo-->
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><!--绑定点击事件-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Developer</a>
+            </div>
+            <!--小屏幕导航按钮和logo-->
+
+            <!--导航-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#selfintroduce">个人介绍</a></li>
+                    <li><a href="#ability">专业技能</a></li>
+                    <li><a href="#production">作品合集</a></li>
+                    <li><a href="#">联系我</a></li>
+                </ul>
+            </div>
+            <!--导航-->
+        </div>
+    </nav>
+<!--导航-->
+
+<!--home-->
+    <section id="home">
+        <div class="filter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <h1>Web Developer</h1>
+                        <h3>Bring your dreams to life</h3>
+
+                        <div class="ghostbutton">
+                            <a href="#">了解我</a>
+                            <span class="line line-top"></span>
+                            <span class="line line-left"></span>
+                            <span class="line line-bottom"></span>
+                            <span class="line line-right"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--home-->
+
+<!--个人介绍-->
+    <section class="introduce" id="selfintroduce">
+        <div class="container">
+            <div class="col-md-4">
+                <img src="img/testimonial-left-image.png" alt="" class="img-responsive im">
+            </div>
+            
+            <div class="col-md-8">
+               <div class="img">
+                   <img class="img-circle img-responsive" src="img/testimonial-left-image.png"></img>
+               </div>
+                <p class="job">Web Developer</p>
+                <p class="name">张栩超</p>
+                <p class="hoddy">热爱技术，喜欢钻研新的技术，喜欢介绍各种不同的挑战,具有较强的自学能力和良好的学习态度。
+                <br>喜欢浏览github，csdn,博客园等社区技术网站。</p>
+            </div>
+        </div>
+    </section>
+<!--个人介绍-->
+
+<!--个人技能-->
+    <section id="ability">
+        <div class="skill">
+            <div class="container">
+                <div class="row" style="text-align: center">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <h2 class="myskill">MY SKILLS</h2>
+                        <p class="wire"></p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row" style="text-align: center">
+                    <div class="col-md-4">
+                        <div class="circleProgress_wrapper">
+                            <span>80%</span>
+                            <div class="wrapper right">
+                                <div class="circleProgress rightcircle"></div>
+                            </div>
+                            <div class="wrapper left">
+                                <div class="circleProgress leftcircle"></div>
+                            </div>
+                        </div>
+                        <span class="text">HTML5</span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="circleProgress_wrapper">
+                            <span>80%</span>
+                            <div class="wrapper right">
+                                <div class="circleProgress rightcircle"></div>
+                            </div>
+                            <div class="wrapper left">
+                                <div class="circleProgress leftcircle"></div>
+                            </div>
+                        </div>
+                        <span class="text">HTML5</span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="circleProgress_wrapper">
+                            <span>80%</span>
+                            <div class="wrapper right">
+                                <div class="circleProgress rightcircle"></div>
+                            </div>
+                            <div class="wrapper left">
+                                <div class="circleProgress leftcircle"></div>
+                            </div>
+                        </div>
+                        <span class="text">HTML5</span>
+                    </div>
+
+                </div>
+                <div class="row" style="text-align: center">
+                    <div class="col-md-4">
+                        <div class="circleProgress_wrapper">
+                            <span>80%</span>
+                            <div class="wrapper right">
+                                <div class="circleProgress rightcircle"></div>
+                            </div>
+                            <div class="wrapper left">
+                                <div class="circleProgress leftcircle"></div>
+                            </div>
+                        </div>
+                        <span class="text">HTML5</span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="circleProgress_wrapper">
+                            <span>80%</span>
+                            <div class="wrapper right">
+                                <div class="circleProgress rightcircle"></div>
+                            </div>
+                            <div class="wrapper left">
+                                <div class="circleProgress leftcircle"></div>
+                            </div>
+                        </div>
+                        <span class="text">HTML5</span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="circleProgress_wrapper">
+                            <span>80%</span>
+                            <div class="wrapper right">
+                                <div class="circleProgress rightcircle"></div>
+                            </div>
+                            <div class="wrapper left">
+                                <div class="circleProgress leftcircle"></div>
+                            </div>
+                        </div>
+                        <span class="text">HTML5</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+<!--个人技能-->
+
+<!--个人作品-->
+    <section id="production">
+        <div class="container">
+            <div class="col-md-12">
+                <h2 class="mypro">My Production</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/05.jpg" alt="" class="img-responsive">
+                    <div class="production-text img-responsive">
+                        <p>个人博客</p>
+                        <p class="glyphicon glyphicon-search"></p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="img/05.jpg" alt="" class="img-responsive">
+                </div>
+
+                <div class="col-md-4">
+                    <img src="img/05.jpg" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+<!--个人作品-->
+</body>
+</html>

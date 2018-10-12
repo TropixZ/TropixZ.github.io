@@ -1,0 +1,241 @@
+body{
+    font-family: 微软雅黑;
+}
+/*导航栏*/
+.navbar-default {
+    background: #C0C0C0;border: none;
+    box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.25);
+    opacity: 0.9;}
+ .navbar-default .navbar-brand{
+    font-size: 25px;font-weight: 600;
+    color: #fff}
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+    font-size: 16px;font-weight: 400;
+}
+/*导航栏*/
+
+#home{
+    background: url(../img/header-bg.jpg) no-repeat;
+    background-attachment:fixed ;
+    background-size:cover;color: #fff;
+    height: 900px;text-align: center;width: 100%;}
+
+.filter{
+    width: 100%;height: 100%;
+    background: rgba(0,0,0,0.5);
+    padding: 250px 0;
+}
+
+#home h1{
+    font-weight: 500;margin-top: 0;
+    margin-bottom: 40px;font-size: 40px;
+    font-family: "Segoe Script";}
+
+#home h3{
+    font-size: 25px;
+    text-shadow:#000 3px 3px 4px;}
+
+/*幽灵按钮*/
+.ghostbutton{
+    width: 150px;height: 60px;
+    background: #8E8E8E;margin: 50px auto;
+    border: 1px solid #fff;position: relative;
+}
+.ghostbutton a{
+    color: black;line-height: 60px;
+    font-size: 18px;text-decoration: none;
+}
+.ghostbutton:hover{
+    background: rgba(255,255,255,0.2);
+}
+.ghostbutton .line{
+    position: absolute;background: none;
+    -moz-transition:ease 0.4s;-o-transition:ease 0.4s;
+    -webkit-transition:ease 0.4s;transition:ease 0.4s;}
+.ghostbutton:hover .line{
+    background:#fff;}
+.ghostbutton .line-top{
+    width: 0px;height: 2px;
+    left: -110%;top:-2px}
+.ghostbutton:hover .line-top{
+    width: 150px;
+    left: -2px;}
+.ghostbutton .line-left{
+    height: 60px;width: 0px;
+    top:-110%;right: -2px;}
+.ghostbutton:hover .line-left{
+    width: 2px;top:-2px;}
+.ghostbutton .line-bottom{
+    height: 2px;width: 0px;
+    bottom: -2px;right: -110%;}
+.ghostbutton:hover .line-bottom{
+    width: 151px;right: -2px;}
+.ghostbutton .line-right{
+    height: 0px;width: 2px;
+    bottom: -110%;left: -2px;}
+.ghostbutton:hover .line-right{
+    height: 60px;bottom: -2px;
+}
+/*幽灵按钮*/
+
+/*个人技能的动画*/
+.circleProgress_wrapper{
+    width: 200px;height: 200px;
+    margin: 50px auto 10px;
+    position: relative;text-align: center;
+}
+.circleProgress_wrapper span{
+    line-height: 200px;
+    font-size: 30px;
+}
+.wrapper{
+    width: 100px;height: 200px;
+    position: absolute;top: 0;
+    overflow: hidden;;
+}
+.right{right: 0;}
+.left{left: 0;}
+
+.circleProgress{
+    width: 200px;height: 200px;
+    border: 10px solid transparent;
+    border-radius: 50%;position: absolute;
+    top: 0;
+}
+
+.rightcircle{
+    border-top: 10px solid #3F3965;
+    border-right: 10px solid #3F3965;
+    right: 0;
+    -webkit-animation: circleProgressLoad_right 6s linear forwards;
+}
+
+.leftcircle{
+    border-left: 10px solid #3F3965;
+    border-bottom: 10px solid #3F3965;
+    left: 0;
+    -webkit-animation: circleProgressLoad_left 6s linear forwards;
+}
+
+@-webkit-keyframes circleProgressLoad_right{
+    0%{
+        -webkit-transform: rotate(-135deg);
+    }
+    50%,100%{
+        -webkit-transform: rotate(45deg);
+    }
+}
+@-webkit-keyframes circleProgressLoad_left{
+    0%,50%{
+        -webkit-transform: rotate(-135deg);
+    }
+    100%{
+        -webkit-transform: rotate(20deg);
+    }
+}
+/*个人技能的动画*/
+
+.text{
+    margin-top: 12px;
+    font-size: 20px;color:#ff9933 ;
+}
+.skill{
+   background: url(../img/skills-bg.jpg) no-repeat ;
+    background-size:cover;background-attachment:fixed ;
+}
+.myskill{
+    font-weight: bold;
+    color: #3F3965;padding-top: 20px;
+}
+.wire{
+    margin: 25px auto 0px;
+    width: 60px;height: 4px;
+    background:#ff9933 ;
+}
+
+
+
+
+/*个人介绍容器重新初始化*/
+.introduce{
+    margin: 20px 0;
+    text-align: center;
+    transition: all 0.4s;}
+.introduce h1{
+    background: #8E8E8E;
+    margin: 0;padding: 0;
+}
+.introduce .col-md-4 .img-responsive{
+    margin: 0;padding: 0;}
+
+.introduce .container ,.introduce .container .col-md-4{
+    padding: 0;margin: 0;}
+
+.introduce .container{
+    width: 100%;}
+/*个人介绍容器重新初始化*/
+
+.introduce .col-md-8{
+    height: 520px;
+    background: url(../img/testimonial-bg.png) no-repeat center center;
+    background-size: cover;text-align: center;
+}
+/*个人头像*/
+.introduce .col-md-8 .img-responsive{
+    width: 150px;height: 150px;
+    margin: 0 auto 30px;
+}
+.introduce .col-md-8 .img{
+    padding-top: 50px;
+}
+/*个人头像*/
+
+/*个人介绍*/
+.introduce .job{
+    color: #990033;font-weight: 300;font-style:italic;
+    font-size: 12px;font-family: 微软雅黑;
+}
+.introduce .name{
+    font-size: 18px;
+}
+/*个人介绍*/
+
+
+/*个人作品*/
+#production{
+    text-align: center;
+    margin-top: 30px;
+}
+.mypro{
+    font-weight: 400;
+    color: #8E8E8E;
+}
+
+
+#production .col-md-4{
+    position: relative;margin: 5px auto 0px;
+    height: 250px;padding: 0;
+}
+#production .img-responsive{
+    height: 250px;margin: 0 auto;
+    padding: 0;width: 380px;padding: 0;box-sizing: inherit;
+}
+#production .production-text{
+    position: absolute;top:0%;left: 0%;
+    padding-top: 100px;height: 250px;width: 380px;
+    box-sizing: inherit;
+}
+.production-text p{
+    font-size: 20px;opacity: 0;padding-bottom: 20px;
+    transition: all 0.4s;margin: 0 auto; opacity: 0;transform: scale(0.8);
+}
+#production .col-md-4:hover .production-text p{
+    opacity: 1;transform: scale(1);
+    font-weight: bold;
+}
+#production .col-md-4:hover{
+    opacity: 0.8;
+}
+
+/*个人作品*/
